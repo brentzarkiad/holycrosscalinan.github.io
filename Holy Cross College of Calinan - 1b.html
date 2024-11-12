@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Holy Cross College of Calinan - 1B</title>
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap');
+			@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&family=Poppins:wght@300&display=swap');
+			
+			body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Noto Sans', sans-serif;
+			background-color: #f5f5f5;
+			}
+			
+			/* Navigation bar */
+			header {
+            background-color: #173c7a;
+            width: 100%;
+            height: 65px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1;
+			}
+			
+			h1 {
+            color: white;
+            margin-top: 6px;
+            margin-bottom: 5px;
+            margin-left: 10px;
+            padding: 3px;
+            font-family: 'Poppins', sans-serif;
+            position: absolute;
+            top: 0;
+			}
+			
+			ul {
+            margin-top: 10px;
+            float: right;
+			}
+			
+			li {
+            padding-top: 12px;
+            padding-right: 15px;
+            display: inline-block;
+			}
+			
+			a {
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            font-family: 'Noto Sans', sans-serif;
+			}
+			
+			a:hover {
+            color: yellow;
+            transition: 0.5s;
+			}
+			
+			/* Slideshow */
+			#slider {
+            overflow: hidden;
+            margin-top: 65px;
+			}
+			
+			#slider figure {
+            margin: 0;
+            width: 500%;
+            position: relative;
+            animation: 20s slider infinite;
+			}
+			
+			#slider figure img {
+            width: 20%;
+            float: left;
+			}
+			
+			@keyframes slider {
+            0%, 20% { left: 0; }
+            25%, 45% { left: -100%; }
+            50%, 70% { left: -200%; }
+            75%, 95% { left: -300%; }
+            100% { left: -400%; }
+			}
+			
+			/* Program */
+			h2 {
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+            margin-bottom: 2px;
+			color: #173c7a;
+			}
+			
+			.line {
+            width: 98%;
+            height: 3px;
+            background-color: #173c7a;
+            margin: 10px auto;
+			}
+			
+			.container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            padding: 20px;
+			}
+			
+			.box {
+            padding: 10px;
+            background-color: #173c7a;
+            text-align: center;
+            border: 1px solid #ccc;
+            transition: transform 0.3s ease-in-out;
+			}
+			
+			.box:hover {
+            transform: scale(1.2);
+            z-index: 2;
+			}
+			
+			.box img {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+			}
+			
+			.description {
+            font-size: 20px;
+            color: white;
+            margin-top: 10px;
+            font-family: 'Poppins', sans-serif;
+			}
+			
+			
+			/* Footer */
+			#footer {
+            background-color: #173c7a;
+            height: 140px;
+            color: white;
+            text-align: center;
+            padding-top: 20px;
+			}
+			
+			h3 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 20px;
+			}
+			
+			.description {
+			text-align: justify;
+			}
+			
+			/* News Slider Style */
+			.news-slider {
+            width: 100%;
+            max-width: 900px;
+            background-color: #173c7a;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            font-size: 18px;
+            border-radius: 5px;
+            overflow: hidden;
+            padding: 10px;
+            text-align: justify;
+            position: relative;
+			margin-left: 235px;
+			margin-top: 20px;
+			margin-bottom: 20px;
+			}
+			
+			.slide {
+            display: none;
+            animation: fade 0.5s ease-in-out;
+			}
+			
+			@keyframes fade {
+            from { opacity: 0; }
+            to { opacity: 1; }
+			}
+			
+			.slide.active {
+            display: block;
+			}
+			
+			.slide-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+			}
+			
+			.slide-content img {
+            width: 360px;
+            height: 230px;
+            border-radius: 10px;
+			}
+			
+			.slide-content p {
+            max-width: 500px;
+            text-align: left;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<!-- Navigation Bar -->
+		<header>
+			<h1>Holy Cross College of Calinan</h1>
+			<nav>
+				<ul>
+					<li><a href="#slider">HOME</a></li>
+					<li><a href="#program">PROGRAM</a></li>
+					<li><a href="#footer">ABOUT</a></li>
+				</ul>
+			</nav>
+		</header>
+		
+		<!-- Slideshow -->
+		<div id="slider">
+			<figure>
+				<img src="https://i.imgur.com/uB6f4bc.jpeg" alt="Pic 1">
+				<img src="https://i.imgur.com/LERc6Kd.jpeg" alt="Pic 2">
+				<img src="https://i.imgur.com/rs8IXov.jpeg" alt="Pic 3">
+				<img src="https://i.imgur.com/BYLvPLn.jpeg" alt="Pic 4">
+			</figure>
+		</div>
+		<div class="line"></div>
+			<h2>Latest News in HCCC</h2>
+			
+		<!-- News Slider -->
+		<div class="news-slider" id="newsSlider">
+			<div class="slide">
+				<div class="slide-content">
+					<img src="https://i.imgur.com/2fCr7KS.jpeg" alt="1b">
+					<p>🎉 Employees' Day at HCCC celebrated the hard work of teachers, staff, and personnel. It was a day of gratitude, recognizing their dedication and contributions to the school community 👩‍🏫.</p>
+				</div>
+			</div>
+			<div class="slide">
+				<div class="slide-content">
+					<img src="https://i.imgur.com/I8SIeix.jpeg" alt="2b">
+					<p>🎸 On the 3rd day of Intramurals Paragon 2024, the Battle of the Bands took center stage, with electrifying performances that captivated the crowd. The bands brought their A-game, showcasing talent, passion, and energy, making it an unforgettable night of music and celebration! 🎶</p>
+				</div>
+			</div>
+			<div class="slide">
+				<div class="slide-content">
+					<img src="https://i.imgur.com/IB4kvG1.jpeg" alt="3b">
+					<p>🎉 Panaghigalaay 2024 was a success, with the Acquaintance Party being a highlight! Students, and faculty members came together for an unforgettable night of music, dancing, and fun, setting the stage for an exciting year ahead! 🥳</p>
+				</div>
+			</div>
+			<div class="slide">
+				<div class="slide-content">
+					<img src="https://i.imgur.com/vIBMoDA.jpeg" alt="4b">
+					<p>👑 On the final day of Intramurals Paragon 2024, the Mr. and Ms. Intramurals pageant showcased elegance, confidence, and school spirit. Contestants competed in talent, evening wear, and Q&A segments, making for a thrilling and glamorous conclusion to the week-long festivities! 🏆</p>
+				</div>
+			</div>
+		</div>
+		
+			<!-- Program -->
+		<div id = "program">
+			<div class="line"></div>
+			<h2>Business Programs Offered in HCCC</h2>
+			<div class="container">
+				<div class="box" onclick="openModal()"> 
+					<img src="https://i.imgur.com/E0OlZXy.png" alt="FM">
+					<p class="description">Financial Management (FM) Program: Focuses on strategies for promoting and selling products, including market research, pricing, and distribution.</p>
+				</div>
+				<div class="box" onclick="openModal()"> 
+					<img src="https://i.imgur.com/3NSaaaG.png" alt="MM">
+					<p class="description">Marketing Management (MM) Program: Covers managing financial resources, including budgeting, investment decisions, and financial planning.</p>
+				</div>
+				<div class="box" onclick="openModal()"> 
+					<img src="https://i.imgur.com/0dr4S8G.png" alt="HRM">
+					<p class="description">Human Resource Management (HRM) Program: Deals with managing people in an organization, including hiring, training, and employee relations.</p>
+				</div>
+			</div>
+			
+			<!-- Footer -->
+			<footer id="footer">
+				<h3>Created By: BSBA-1B</h3>
+				<h3>J Brent Mahinay, Jerome Dignadice, Arnel Bitalas</h3>
+			</footer>
+			<script>
+				let currentSlide = 0;
+				const slides = document.querySelectorAll('.slide');
+				
+				function showSlide(index) {
+					slides.forEach(slide => slide.classList.remove('active'));
+					slides[index].classList.add('active');
+				}
+				
+				function nextSlide() {
+					currentSlide = (currentSlide + 1) % slides.length;
+					showSlide(currentSlide);
+				}
+
+				setInterval(nextSlide, 3000);
+				
+				showSlide(currentSlide);
+			</script>
+		</body>
+	</html>
